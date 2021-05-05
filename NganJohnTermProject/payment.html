@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+<title>John Ngan's Shop</title>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/shop.css" rel="stylesheet"/>
+<link href="css/payment.css" rel="stylesheet"/>
+<script src="js/vertification.js" defer ></script>
+
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="sidebar">
+		
+        <h2><a href="home.html"><img src="images/keylogo.png"></h2></a>
+        <ul>
+			
+            <li><a href="home.html"><i class="fas fa-home"></i>Home</a></li>
+            <li><a href="aboutme.html"><i class="fas fa-address-card"></i>About Me</a></li>
+            <li><a href="gallery.html"><i class="fas fa-images"></i>Gallery</a></li>
+            <li><a href="products.html"><i class="fas fa-keyboard"></i>Products</a></li>
+			<li><a href="events.html"><i class="fas fa-calendar-alt"></i>Events</a></li>
+			<li><a href="shop.html"><i class="fas fa-shopping-cart"></i>Shop</a></li>
+            
+        </ul> 
+     <div class="footer">
+        <div class="social_media">
+          <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+      </div>
+	  </div>
+    </div>
+    <div class="main_content">
+        
+        <div class="info">
+            <section id="paySection">
+      <h1>Payment Form</h1>
+      
+      <form id="order" name="order">       
+        <table id="orderTable">
+           <tr>
+              <td>
+                 <input type="text" name="modelName1" id="modelName1" readonly  /> 
+                    *
+                 <input type="text" name="modelQty1" id="modelQty1"  readonly />                                              
+              </td>                
+              <td>
+                 <input type="text" name="orderCost1" id="orderCost1" size="10"  readonly />
+              </td>
+           </tr>
+		   
+		      <tr>
+              <td>
+                 <input type="text" name="modelName2" id="modelName2" readonly  /> 
+                     *
+                 <input type="text" name="modelQty2" id="modelQty2"  readonly />                                              
+              </td>                
+              <td>
+                 <input type="text" name="orderCost2" id="orderCost2" size="10"  readonly />
+              </td>
+           </tr>
+		   
+		   
+		      <tr>
+              <td>
+                 <input type="text" name="modelName3" id="modelName3" readonly  /> 
+                     *
+                 <input type="text" name="modelQty3" id="modelQty3"  readonly />                                              
+              </td>                
+              <td>
+                 <input type="text" name="orderCost3" id="orderCost3" size="10"  readonly />
+              </td>
+           </tr>
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+           <tr>
+              <td>
+                 <input type="text" name="shippingType" id="shippingType"  readonly />
+              </td>
+              <td>
+                 <input type="text" name="shippingCost" id="shippingCost" size="10" readonly  />
+              </td>
+           </tr>        
+           <tr>
+              <td class="rightA">Subtotal:</td>
+              <td class="outcell">
+                 <input type="text" name="subTotal" id="subTotal" size="10" readonly  />
+              </td>
+           </tr>
+
+           <tr>
+              <td class="rightA">Tax (8%):</td>
+              <td>
+                 <input type="text" name="salesTax" id="salesTax" size="10" readonly  />
+              </td>
+           </tr>
+
+           <tr>
+              <td class="rightA">TOTAL:</td>
+              <td>
+                 <input type="text" name="cartTotal" id="cartTotal" size="10" readonly  />
+              </td>
+           </tr>
+        </table>
+      </form>      
+
+      <form id="credit" name="credit" method="post" action="vertification.html">         
+         <fieldset id="creditcard">
+            <legend>Credit Information</legend>
+
+            <label for="cardHolder">Card Holder*</label>
+            <input name="cardHolder" id="cardHolder" required type="text" />              
+
+            <fieldset id="cards">
+               <label class="cardLabel">Credit Company*</label>
+               <label class="cardLabel">
+                  <input name="company" value="amex" type="radio" required />
+                  <img src="images/amex.png" alt="American Express" />
+               </label>
+               <label class="cardLabel">               
+                  <input name="company" value="discover" type="radio" />
+                  <img src="images/discover.png" alt="Discover" />
+               </label>
+               <label class="cardLabel">                  
+                  <input name="company" value="master" type="radio"  />
+                  <img src="images/master.png" alt="MasterCard" />
+               </label>
+               <label class="cardLabel">                  
+                  <input name="company" value="visa" type="radio"  />
+                  <img src="images/visa.png" alt="Visa" />
+               </label>
+            </fieldset>          
+
+            <label for="cardNumber">Credit Card Number*</label>
+            <input name="cardNumber" id="cardNumber" required type="text"
+                   pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"/>
+
+            <label for="expDate">Expiration Date*</label>
+            <input name="expDate" id="expDate" required type="text" placeholder="mm/yyyy" />
+
+            <label for="cvc">CVC*</label>
+            <input name="cvc" id="cvc" required pattern="^\d{3,4}$" type="text"/>
+         </fieldset>
+
+         <p id="footnote">* - Required Item</p>        
+         <input type="submit" id="subButton" value="Submit Payment" />         
+      </form>
+
+   </section>
+          
+      </div>
+    </div>
+</div>
+
+
+
+</body>
+
+</html>

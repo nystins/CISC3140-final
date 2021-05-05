@@ -1,0 +1,49 @@
+.wrapper .main_content{
+  width: 100%;
+  margin-left: 200px;
+}
+
+.wrapper .main_content .header{
+  padding: 20px;
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+
+
+
+.wrapper .main_content .info{
+  margin: 20px;
+  color: #717171;
+  line-height: 25px;
+  font-size: 25px;
+}
+
+.wrapper .main_content .info div{
+  margin-bottom: 30px;
+  
+}
+
+.wrapper .main_content .rubbermech{
+	float: right;
+	width: 30%;
+	display:block;
+}
+
+
+.wrapper .main_content  aside {
+	padding-right: 2em;
+	float: right;
+	border-right: 4px double purple;
+}
+
+.wrapper .main_content  aside ul li{
+	list-style: none;
+	text-align: right;
+	line-height: 30px;
+}
+
+.wrapper .main_content   aside ul li a{
+	text-decoration: none;
+}

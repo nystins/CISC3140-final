@@ -1,0 +1,50 @@
+.wrapper .main_content{
+  width: 100%;
+  margin-left: 200px;
+}
+
+.wrapper .main_content .header{
+  padding: 20px;
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+.wrapper .main_content .info{
+  margin: 20px;
+  color: #717171;
+  line-height: 25px;
+  font-size: 25px;
+}
+
+
+
+table#calendar_table{
+	color: black;
+	margin: auto;
+}
+
+th.weekdays{
+	background-color: white;
+}
+
+td#today{
+	background-color: red;
+}
+
+th, td{
+	text-align: center;
+	border: 5px solid black;
+	padding: 5px;
+	width:15%;
+
+}
+
+h2{
+	color: red;
+}
+
+em{
+	
+	color: white;
+}

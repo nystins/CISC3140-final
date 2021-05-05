@@ -1,0 +1,43 @@
+.wrapper .main_content{
+  width: 100%;
+  margin-left: 200px;
+}
+
+.wrapper .main_content .header{
+  padding: 20px;
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+
+
+
+.wrapper .main_content .info{
+  margin: 20px;
+  color: #717171;
+  line-height: 35px;
+  font-size: 25px;
+}
+
+.wrapper .main_content .info div{
+  margin-bottom: 30px;
+  text-align: justify;
+  display:inline-block;
+  clear:both;
+  
+}
+
+
+
+.wrapper .main_content .info aside{
+	width: 40%;
+	padding-left: 15px;
+	height: 30%
+	margin-left: 15px;
+	float: right;
+	font-style: italic;
+	background-color: lightgray;
+	line-height: 45px;
+	color: red;
+}

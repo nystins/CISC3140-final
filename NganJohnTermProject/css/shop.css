@@ -1,0 +1,123 @@
+.wrapper .main_content{
+  width: 100%;
+  margin-left:200px;
+}
+
+
+.wrapper .main_content .header {
+	display:block;
+	float: right;
+	background: #fff;
+	border-bottom: 1px solid #e0e4e8;
+	padding: 20px;
+	margin-right: 50px;
+}
+
+
+.wrapper .main_content .info{
+  margin: 20px;
+  color: #717171;
+  line-height: 35px;
+  font-size: 20px;
+}
+
+.wrapper .main_content .info div{
+  margin-bottom: 30px;
+  
+  
+  
+}
+
+
+/* Order Table Styles */
+
+table#cartTable {
+   margin: 15px;
+   padding-left: 50%;
+   width: 65%;
+ 
+   border-collapse: collapse;
+  text-align:center;
+}
+
+form#cart fieldset {
+   width:50%;
+  float:center;
+}
+
+form#cart input[type="text"] {
+   background-color: rgba(240, 233, 222, 0.5);
+}
+
+table#cartTable caption {
+   text-decoration: underline;
+}
+
+
+table#cartTable td {
+   height: 30px;
+   vertical-align: top;
+   
+}
+
+
+
+
+form#cart input[type="text"] {
+   color: rgb(101, 101, 101);
+}
+
+form#cart select {
+   display: inline-block;
+   margin-left: 10px;
+   
+   color: rgb(101, 101, 101);
+}
+
+
+table#cartTable tr td:last-of-type input {
+   text-align: right;
+   border: none;
+}
+
+table#cartTable tr:nth-of-type(3) {
+   border-bottom: 1px solid rgb(151, 151, 151);
+}
+
+table#cartTable tr:nth-of-type(2) td, table#cartTable tr:nth-of-type(4) td {
+   padding-top: 15px;
+}
+
+table#cartTable tr:nth-of-type(5) td {
+   border-bottom: 6px double rgb(151, 151, 151);
+}
+
+table#cartTable tr:last-of-type td {
+   padding-top: 15px;
+}
+
+table#cartTable td.rightA {
+   text-align: right;
+   padding-right: 10px;
+   padding-bottom: 10px;
+}
+
+form#cart fieldset label {
+   display: block;
+   
+   
+   
+   
+}
+
+form#cart input#buttonAdd {
+   display: block;
+   width: 240px;
+   height: 35px;
+   margin: 15px auto;
+   background-color: rgba(202, 201, 201, 0.8);
+   font-size: 1.3em;
+   border-radius: 20px;
+   float:center;
+  
+}

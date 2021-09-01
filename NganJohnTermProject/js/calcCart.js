@@ -27,11 +27,7 @@ function calcCart(){
 	
 	//shipping cost individual
 	var shipCost1 = document.querySelector('input[name="shipping"]:checked').value * document.getElementById("modelQty1").value;
-	
-	
 	var shipCost2 = document.querySelector('input[name="shipping"]:checked').value * document.getElementById("modelQty2").value;
-	
-	
 	var shipCost3 = document.querySelector('input[name="shipping"]:checked').value * document.getElementById("modelQty3").value;
 	document.getElementById("shippingCost").value = formatNumber(shipCost3, 2);
 	
@@ -59,9 +55,6 @@ function(){
 		document.getElementById("id").innerHTML = "<label>Welcome, " + user + "!</label>"
 		
 });
-
-
-
 
 function formatNumber(val, decimals) {
    return val.toLocaleString(undefined, {minimumFractionDigits: decimals, 

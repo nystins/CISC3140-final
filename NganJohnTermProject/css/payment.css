@@ -15,13 +15,10 @@ form#order input {
    padding-right:10px;
 }
 
-
-
 table#orderTable td {
    height: 20px;
    vertical-align: top;
    padding-right: 30px;
-  
   
 }
 
@@ -34,8 +31,6 @@ form#order input#modelName, form#order input#shippingType {
    width: 30em;
   
 }
-
-
 
 table#orderTable tr td:last-of-type input {
    text-align: right;

@@ -1,188 +1,172 @@
 <!DOCTYPE HTML>
 <html lang="en">
-
-<head>
-
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-<title>John Ngan's Shop</title>
-<link href="css/style.css" rel="stylesheet"/>
-<link href="css/shop.css" rel="stylesheet"/>
-<script src="js/calcCart.js" defer ></script>
-
-</head>
-<body>
-<div class="wrapper">
-    <div class="sidebar">
-		
-        <h2><a href="home.html"><img src="images/keylogo.png"></h2></a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <title>John Ngan's Shop</title>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/shop.css" rel="stylesheet"/>
+    <script src="js/calcCart.js" defer ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- sidebar: navigate through other pages -->
+      <div class="sidebar">
+        <h2><a href="home.html"><img src="images/keylogo.png"></a></h2>
         <ul>
-			
-            <li><a href="home.html"><i class="fas fa-home"></i>Home</a></li>
-            <li><a href="aboutme.html"><i class="fas fa-address-card"></i>About Me</a></li>
-            <li><a href="gallery.html"><i class="fas fa-images"></i>Gallery</a></li>
-            <li><a href="products.html"><i class="fas fa-keyboard"></i>Products</a></li>
-			<li><a href="events.html"><i class="fas fa-calendar-alt"></i>Events</a></li>
-			<li><a href="shop.html"><i class="fas fa-shopping-cart"></i>Shop</a></li>
-            
-        </ul> 
-     <div class="footer">
-        <div class="social_media">
-          <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-          <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+          <li><a href="home.html"><i class="fas fa-home"></i>Home</a></li>
+          <li><a href="aboutme.html"><i class="fas fa-address-card"></i>About Me</a></li>
+          <li><a href="gallery.html"><i class="fas fa-images"></i>Gallery</a></li>
+          <li><a href="products.html"><i class="fas fa-keyboard"></i>Products</a></li>
+          <li><a href="events.html"><i class="fas fa-calendar-alt"></i>Events</a></li>
+          <li><a href="shop.html"><i class="fas fa-shopping-cart"></i>Shop</a></li>
+        </ul>
+        <!-- placed footer within the navbar/sidebar -->
+        <div class="footer">
+          <div class="social_media">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
       </div>
-	  </div>
-    </div>
-    <div class="main_content">
+      <div class="main_content">
         <div class="header">
-	<section>
-		<form id="memberID">
-			<label for="username">Username</label>
-			<input id="username" name="user" type="text" />
-			<label for="password">Password</label>
-			<input type="password" id="password" name="pwd" />
-			<input type="button" id="myBtn" value="Login" />
-		</form>
-		<div id="id">
-		</div>
-</section>
-		
-			
-		</div>  
+          <!-- when users type in user+pwd change to "Hello, User" -->
+          <section>
+            <form id="memberID">
+              <label for="username">Username</label>
+              <input id="username" name="user" type="text" />
+              <label for="password">Password</label>
+              <input type="password" id="password" name="pwd" />
+              <input type="button" id="myBtn" value="Login" />
+            </form>
+            <div id="id">
+            </div>
+          </section>
+        </div>
         <div class="info">
           <section id="orderSection">
-      <form id="cart" name="cart" action="payment.html" method="get">
-        
-        <table id="cartTable">
-           <caption>Shopping Cart:</caption>
-           <tr>
-              <td>
-                 <label>Eniigma Infinitum Custom TKL ($499.99)</label>
-				 
-                 <input type="hidden" name="modelCost1" id="modelCost1" value="499.99" />
-                 <input type="hidden" id="modelName" name="modelName" value="Eniigma Infinitum Custom TKL ($499.99)" />
-              </td>
-			  
-			   <td class="rightA">
-                 <label for="modelQty">Quantity:</label>
-                 <select name="modelQty1" id="modelQty1">
-                   <option value="0" selected>0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option><option value="3">3</option>
-                    <option value="4">4</option><option value="5">5</option><option value="6">6</option>
-                    <option value="7">7</option><option value="8">8</option><option value="9">9</option>
-                    <option value="10">10</option>
-                 </select>   
-              </td>  
-			   <td>
-                 <input type="text" name="orderCost1" id="orderCost1" size="10" readonly />
-              </td>
-		</tr>  
-			  
-			  
-			 <tr>
-			  <td >
-                 <label>TGR Jane 60% ($699.99)</label>
-                 <input type="hidden" name="modelCost2" id="modelCost2" value="699.99" />
-                 <input type="hidden" id="modelName" name="modelName" value="TGR Jane 60% ($699.99)" />
-              </td>
-			  
-			  
-			 
-        
-        
-			    <td class="rightA">
-                 <label for="modelQty">Quantity:</label>
-                 <select name="modelQty2" id="modelQty2">
-					<option value="0" selected>0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option><option value="3">3</option>
-                    <option value="4">4</option><option value="5">5</option><option value="6">6</option>
-                    <option value="7">7</option><option value="8">8</option><option value="9">9</option>
-                    <option value="10">10</option>
-                 </select>   
-              </td>   
-			 
-			   <td>
-                 <input type="text" name="orderCost2" id="orderCost2" size="10" readonly />
-              </td>
-			 </tr> 
-			 
-			<tr> 
-			   <td>
-			   
-                 <label>KBD75v2  75% ($799.99)</label>
-                 <input type="hidden" name="modelCost3" id="modelCost3" value="799.99" />
-                 <input type="hidden" id="modelName" name="modelName" value="KBD75v2  75% ($799.99)" />
-              </td>
-			  
-			  <td class="rightA">
-                 <label for="modelQty">Quantity:</label>
-                 <select name="modelQty3" id="modelQty3">
-                    <option value="0" selected>0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option><option value="3">3</option>
-                    <option value="4">4</option><option value="5">5</option><option value="6">6</option>
-                    <option value="7">7</option><option value="8">8</option><option value="9">9</option>
-                    <option value="10">10</option>
-                 </select>   
-              </td>   
-				
-              <td>
-                 <input type="text" name="orderCost3" id="orderCost3" size="10" readonly />
-              </td>
-           </tr> 
-           <tr>
-              <td colspan="2"> 
-                 <input type="hidden" id="shippingType" name="shippingType" />                
-                 <fieldset>
-                    <legend>Shipping</legend>
-					<label><input type="radio" id="ground" name="shipping" value="12.95" checked /> Ground Shipping ($12.95)</label> 
-					<label><input type="radio" id="day_2" name="shipping" value="26.50" /> 2-Day Shipping ($26.50)</label>  
-                    <label><input type="radio" id="overnight" name="shipping" value="43.50"  /> Overnight Shipping ($43.50)</label>
-                     
-                    
-                 </fieldset>
-              </td>
-              <td>
-                 <input type="text" name="shippingCost" id="shippingCost" size="10" readonly />
-              </td>
-           </tr>        
-           <tr>
-              <td colspan="2" class="rightA">Subtotal</td>
-              <td class="outcell">
-                 <input type="text" name="subTotal" id="subTotal" size="10" readonly />
-              </td>
-           </tr>
-
-           <tr>
-              <td colspan="2" class="rightA">Tax (8%)</td>
-              <td>
-                 <input type="text" name="salesTax" id="salesTax" size="10" readonly />
-              </td>
-           </tr>
-
-           <tr>
-              <td colspan="2" class="rightA">TOTAL</td>
-              <td>
-                 <input type="text" name="cartTotal" id="cartTotal" size="10" readonly />
-             </td>
-           </tr>
-        </table>
-        <input type="submit" id="buttonAdd" value="Checkout" />
-
-      </form>
-	  
-   </section>
-          
+            <form id="cart" name="cart" action="payment.html" method="get">
+              <table id="cartTable">
+                <caption>Shopping Cart:</caption>
+                <tr>
+                  <td>
+                    <label>Eniigma Infinitum Custom TKL ($499.99)</label>
+                    <input type="hidden" name="modelCost1" id="modelCost1" value="499.99" />
+                    <input type="hidden" id="modelName" name="modelName" value="Eniigma Infinitum Custom TKL ($499.99)" />
+                  </td>
+                  <td class="rightA">
+                    <label for="modelQty">Quantity:</label>
+                    <select name="modelQty1" id="modelQty1">
+                      <option value="0" selected>0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </td>
+                  <td>
+                    <input type="text" name="orderCost1" id="orderCost1" size="10" readonly />
+                  </td>
+                </tr>
+                <tr>
+                  <td >
+                    <label>TGR Jane 60% ($699.99)</label>
+                    <input type="hidden" name="modelCost2" id="modelCost2" value="699.99" />
+                    <input type="hidden" id="modelName" name="modelName" value="TGR Jane 60% ($699.99)" />
+                  </td>
+                  <td class="rightA">
+                    <label for="modelQty">Quantity:</label>
+                    <select name="modelQty2" id="modelQty2">
+                      <option value="0" selected>0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </td>
+                  <td>
+                    <input type="text" name="orderCost2" id="orderCost2" size="10" readonly />
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <label>KBD75v2  75% ($799.99)</label>
+                    <input type="hidden" name="modelCost3" id="modelCost3" value="799.99" />
+                    <input type="hidden" id="modelName" name="modelName" value="KBD75v2  75% ($799.99)" />
+                  </td>
+                  <td class="rightA">
+                    <label for="modelQty">Quantity:</label>
+                    <select name="modelQty3" id="modelQty3">
+                      <option value="0" selected>0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </td>
+                  <td>
+                    <input type="text" name="orderCost3" id="orderCost3" size="10" readonly />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <input type="hidden" id="shippingType" name="shippingType" />                
+                    <fieldset>
+                      <legend>Shipping</legend>
+                      <label><input type="radio" id="ground" name="shipping" value="12.95" checked /> Ground Shipping ($12.95)</label> 
+                      <label><input type="radio" id="day_2" name="shipping" value="26.50" /> 2-Day Shipping ($26.50)</label>  
+                      <label><input type="radio" id="overnight" name="shipping" value="43.50"  /> Overnight Shipping ($43.50)</label>
+                    </fieldset>
+                  </td>
+                  <td>
+                    <input type="text" name="shippingCost" id="shippingCost" size="10" readonly />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="rightA">Subtotal</td>
+                  <td class="outcell">
+                    <input type="text" name="subTotal" id="subTotal" size="10" readonly />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="rightA">Tax (8%)</td>
+                  <td>
+                    <input type="text" name="salesTax" id="salesTax" size="10" readonly />
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2" class="rightA">TOTAL</td>
+                  <td>
+                    <input type="text" name="cartTotal" id="cartTotal" size="10" readonly />
+                  </td>
+                </tr>
+              </table>
+              <input type="submit" id="buttonAdd" value="Checkout" />
+            </form>
+          </section>
+        </div>
       </div>
     </div>
-</div>
-
-
-
-</body>
-
+  </body>
 </html>

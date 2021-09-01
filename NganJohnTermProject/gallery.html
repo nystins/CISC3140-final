@@ -1,122 +1,92 @@
 <!DOCTYPE HTML>
 <html lang="en">
-
-<head>
-
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-<title>John Ngan's Gallery</title>
-<link href="css/style.css" rel="stylesheet"/>
-<link href="css/gallery.css" rel="stylesheet"/>
-<script src="js/gallery.js" async ></script>
-</head>
-
-<div class="wrapper">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <title>John Ngan's Gallery</title>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/gallery.css" rel="stylesheet"/>
+    <script src="js/gallery.js" async ></script>
+  </head>
+  <div class="wrapper">
+    <!-- sidebar: navigate through other pages -->
     <div class="sidebar">
-		
-        <h2><a href="home.html"><img src="images/keylogo.png"></h2></a>
-        <ul>
-			
-            <li><a href="home.html"><i class="fas fa-home"></i>Home</a></li>
-            <li><a href="aboutme.html"><i class="fas fa-address-card"></i>About Me</a></li>
-            <li><a href="gallery.html"><i class="fas fa-images"></i>Gallery</a></li>
-            <li><a href="products.html"><i class="fas fa-keyboard"></i>Products</a></li>
-			<li><a href="events.html"><i class="fas fa-calendar-alt"></i>Events</a></li>
-			<li><a href="shop.html"><i class="fas fa-shopping-cart"></i>Shop</a></li>
-            
-        </ul> 
+      <h2><a href="home.html"><img src="images/keylogo.png"></a></h2>
+      <ul>
+        <li><a href="home.html"><i class="fas fa-home"></i>Home</a></li>
+        <li><a href="aboutme.html"><i class="fas fa-address-card"></i>About Me</a></li>
+        <li><a href="gallery.html"><i class="fas fa-images"></i>Gallery</a></li>
+        <li><a href="products.html"><i class="fas fa-keyboard"></i>Products</a></li>
+        <li><a href="events.html"><i class="fas fa-calendar-alt"></i>Events</a></li>
+        <li><a href="shop.html"><i class="fas fa-shopping-cart"></i>Shop</a></li>
+      </ul>
+      <!-- placed footer within the navbar/sidebar -->
       <div class="footer">
         <div class="social_media">
           <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
           <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
           <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
       </div>
-	  </div>
     </div>
-	
-	
     <div class="main_content">
-        <div class="header"><h1>SlideShow Gallery</h1></div>  
-
-	
-<body>
-
-
-
-<div class="container">
-  <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
-    <img src="images/80tkl.png" style="width:70%;height:50%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
-    <img src="images/bento.png" style="width:70%;height:50%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">3 / 6</div>
-    <img src="images/infbackplate.jpg" style="width:70%;height:50%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">4 / 6</div>
-    <img src="images/keycult1.png" style="width:70%;height:50%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">5 / 6</div>
-    <img src="images/logo.jpg" style="width:70%;height:50%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">6 / 6</div>
-    <img src="images/houhai2.png" style="width:70%;height:50%">
-  </div>
-    
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
-
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
-
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="images/80tkl.png" style="width:100%" onclick="currentSlide(1)" alt="80tkl">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/bento.png" style="width:100%" onclick="currentSlide(2)" alt="bento">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/infbackplate.jpg" style="width:100%" onclick="currentSlide(3)" alt="infbackplate">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/keycult1.png" style="width:100%" onclick="currentSlide(4)" alt="keycult1">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="images/logo.jpg" style="width:100%" onclick="currentSlide(5)" alt="logo">
-    </div>    
-    <div class="column">
-      <img class="demo cursor" src="images/houhai2.png" style="width:100%" onclick="currentSlide(6)" alt="houhai2">
-    </div>
-  </div>
-</div>
-
-
-		
-		
-		
-		
-          
+      <div class="header">
+        <h1>SlideShow Gallery</h1>
       </div>
-    </div>  
- 
-
-
-
-
-
-
+      <body>
+        <div class="container">
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="images/80tkl.png" style="width:70%;height:50%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="images/bento.png" style="width:70%;height:50%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="images/infbackplate.jpg" style="width:70%;height:50%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="images/keycult1.png" style="width:70%;height:50%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="images/logo.jpg" style="width:70%;height:50%">
+          </div>
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="images/houhai2.png" style="width:70%;height:50%">
+          </div>
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="images/80tkl.png" style="width:100%" onclick="currentSlide(1)" alt="80tkl">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/bento.png" style="width:100%" onclick="currentSlide(2)" alt="bento">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/infbackplate.jpg" style="width:100%" onclick="currentSlide(3)" alt="infbackplate">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/keycult1.png" style="width:100%" onclick="currentSlide(4)" alt="keycult1">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/logo.jpg" style="width:100%" onclick="currentSlide(5)" alt="logo">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="images/houhai2.png" style="width:100%" onclick="currentSlide(6)" alt="houhai2">
+            </div>
+          </div>
+        </div>
+      </body>
+    </div>
+  </div>
 </html>

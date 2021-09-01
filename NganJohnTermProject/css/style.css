@@ -13,9 +13,6 @@ body{
    background-color: #f3f5f9;
 }
 
-
-
-
 .wrapper{
   display: flex;
   position: relative;
@@ -80,10 +77,6 @@ body{
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-
-
-
-
 
 @media (max-height: 500px){
   .social_media{

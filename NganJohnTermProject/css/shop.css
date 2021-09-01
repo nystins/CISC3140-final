@@ -3,7 +3,6 @@
   margin-left:200px;
 }
 
-
 .wrapper .main_content .header {
 	display:block;
 	float: right;
@@ -12,7 +11,6 @@
 	padding: 20px;
 	margin-right: 50px;
 }
-
 
 .wrapper .main_content .info{
   margin: 20px;
@@ -23,9 +21,6 @@
 
 .wrapper .main_content .info div{
   margin-bottom: 30px;
-  
-  
-  
 }
 
 
@@ -104,10 +99,6 @@ table#cartTable td.rightA {
 
 form#cart fieldset label {
    display: block;
-   
-   
-   
-   
 }
 
 form#cart input#buttonAdd {
